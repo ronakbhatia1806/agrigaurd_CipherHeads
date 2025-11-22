@@ -1,0 +1,12 @@
+{
+  "name": "agrigard-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix Agrigard_Cipherheads run dev",
+    "build": "npm --prefix Agrigard_Cipherheads run build",
+    "start": "npm --prefix Agrigard_Cipherheads run start",
+    "test": "npm --prefix Agrigard_Cipherheads run test",
+    "install-client": "npm --prefix Agrigard_Cipherheads install",
+    "install-all": "npm install && npm --prefix Agrigard_Cipherheads install"
+  }
+}
