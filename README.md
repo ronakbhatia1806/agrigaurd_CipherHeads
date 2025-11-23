@@ -115,11 +115,11 @@ npm run dev
 * If frontend shows failed fetch, ensure API calls point to `http://localhost:8000/predict` and CORS is enabled in backend
 
 
-## 📞 Team Details and roles
+## 📞 Team Details and Roles
 
-Ronak Bhatia 
-Param Lodaya
-Arsh Kazi 
+Ronak Bhatia, 
+Param Lodaya,
+Arsh Kazi, 
 Hriday Patel 
 
 
