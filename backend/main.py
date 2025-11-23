@@ -23,16 +23,19 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:8080",
         "http://127.0.0.1:8080",
-        "http://localhost:5173",  # Default Vite port
+        "http://localhost:5173",
         "http://127.0.0.1:5173",
         "http://localhost:8082",
         "http://127.0.0.1:8082",
+        "http://localhost:8083",
+        "http://127.0.0.1:8083",
+        "http://localhost:8084",
+        "http://127.0.0.1:8084",
     ],
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
-
 MODEL = load_model()
 CLASS_NAMES = get_class_names()
 IMG_SIZE = (224, 224)

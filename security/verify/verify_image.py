@@ -63,4 +63,3 @@ def verify_image(image_input, threshold=5):
 if __name__ == "__main__":
     test = verify_image(r"C:/Users/RonakB/Desktop/agriguard/test/test_image.jpg")
     print(test)
-
