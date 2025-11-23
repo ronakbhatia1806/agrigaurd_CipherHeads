@@ -10,9 +10,10 @@ import numpy as np
 from PIL import Image
 import io
 
-from model_loader import load_model, get_class_names
+from backend.model_loader import load_model, get_class_names
 from security.verify.verify_image import verify_image
 from security.verify.verify_salted import verify_salted_image
+from backend.treatment_loader import get_treatment_for_disease, calculate_severity
 
 app = FastAPI(title="Agriguard API")
 
@@ -24,6 +25,8 @@ app.add_middleware(
         "http://127.0.0.1:8080",
         "http://localhost:5173",  # Default Vite port
         "http://127.0.0.1:5173",
+        "http://localhost:8082",
+        "http://127.0.0.1:8082",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -103,6 +106,13 @@ async def predict(file: UploadFile = File(...)):
         pred_label = CLASS_NAMES[pred_idx]
         
         print(f"[INFO] Prediction: {pred_label} ({confidence:.2%})")
+        
+        # Calculate severity and get disease-specific treatments
+        severity = calculate_severity(confidence)
+        treatment_info = get_treatment_for_disease(pred_label, severity)
+        
+        print(f"[INFO] Severity: {severity}")
+        print(f"[INFO] Custom treatment available: {treatment_info['has_custom_treatment']}")
 
         return {
             "integrity_verified": integrity.get("verified"),
@@ -112,7 +122,10 @@ async def predict(file: UploadFile = File(...)):
             "salted_match": salted.get("matched_image"),
             "prediction_index": pred_idx,
             "prediction_label": pred_label,
-            "prediction_confidence": confidence
+            "prediction_confidence": confidence,
+            "severity": severity,
+            "treatments": treatment_info["treatments"],
+            "severity_note": treatment_info["severity_note"]
         }
     except HTTPException:
         raise

@@ -1,0 +1,324 @@
+{
+    "Apple___Apple_scab": {
+        "treatments": [
+            "Apply fungicide at green tip stage and continue through petal fall",
+            "Remove and destroy fallen leaves and infected fruit to reduce spore source",
+            "Prune trees to improve air circulation and reduce humidity",
+            "Use resistant apple varieties like Liberty, Freedom, or Enterprise in future plantings",
+            "Avoid overhead irrigation; water at soil level"
+        ],
+        "severity_notes": {
+            "mild": "Early fungicide application can effectively control the disease",
+            "moderate": "Combine fungicide treatment with cultural practices for best results",
+            "severe": "Heavy infection may require multiple fungicide applications and removal of severely affected branches"
+        }
+    },
+    "Apple___Black_rot": {
+        "treatments": [
+            "Prune out dead and diseased branches during dormant season",
+            "Remove mummified fruits from tree and ground",
+            "Apply fungicide starting at pink bud stage through harvest",
+            "Maintain tree vigor through proper fertilization and watering",
+            "Ensure good air circulation by proper spacing and pruning"
+        ],
+        "severity_notes": {
+            "mild": "Sanitation and preventive fungicide can manage the disease",
+            "moderate": "Aggressive pruning and multiple fungicide applications needed",
+            "severe": "Consider removing severely infected trees to prevent spread"
+        }
+    },
+    "Apple___Cedar_apple_rust": {
+        "treatments": [
+            "Remove nearby cedar or juniper trees if possible (alternate host)",
+            "Apply fungicide from pink bud through petal fall stages",
+            "Plant rust-resistant apple varieties",
+            "Rake and destroy fallen leaves",
+            "Ensure proper tree spacing for air circulation"
+        ],
+        "severity_notes": {
+            "mild": "Fungicide application during critical infection periods is effective",
+            "moderate": "May need to remove nearby cedar trees and apply multiple fungicide treatments",
+            "severe": "Severe infections can cause fruit deformity; consider resistant varieties"
+        }
+    },
+    "Apple___healthy": {
+        "treatments": [
+            "Continue regular monitoring for early disease detection",
+            "Maintain proper fertilization schedule",
+            "Ensure adequate watering during dry periods",
+            "Prune annually to maintain tree structure and air circulation",
+            "Apply preventive fungicide during wet seasons if needed"
+        ],
+        "severity_notes": {
+            "mild": "Maintain current care practices",
+            "moderate": "Maintain current care practices",
+            "severe": "Maintain current care practices"
+        }
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "treatments": [
+            "Plant resistant corn hybrids",
+            "Rotate crops - avoid continuous corn planting",
+            "Apply foliar fungicide when disease first appears",
+            "Tillage to bury crop residue and reduce inoculum",
+            "Ensure adequate plant spacing for air circulation"
+        ],
+        "severity_notes": {
+            "mild": "Early fungicide application can prevent yield loss",
+            "moderate": "Multiple fungicide applications may be needed",
+            "severe": "Severe infections can cause significant yield reduction; plan crop rotation"
+        }
+    },
+    "Corn_(maize)___Common_rust_": {
+        "treatments": [
+            "Plant rust-resistant corn hybrids",
+            "Apply foliar fungicide if disease appears before tasseling",
+            "Monitor weather conditions - disease favors cool, humid weather",
+            "Remove volunteer corn plants that can harbor the disease",
+            "Ensure balanced fertilization to maintain plant health"
+        ],
+        "severity_notes": {
+            "mild": "Usually doesn't require treatment in resistant varieties",
+            "moderate": "Fungicide may be needed if infection occurs before silking",
+            "severe": "Heavy infection before grain fill can reduce yields significantly"
+        }
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "treatments": [
+            "Use resistant corn hybrids",
+            "Rotate with non-host crops for 2-3 years",
+            "Apply fungicide at first sign of disease",
+            "Bury crop residue through tillage",
+            "Avoid planting corn in fields with history of the disease"
+        ],
+        "severity_notes": {
+            "mild": "Resistant varieties usually provide adequate control",
+            "moderate": "Fungicide application recommended if disease appears before tasseling",
+            "severe": "Multiple fungicide applications and crop rotation essential"
+        }
+    },
+    "Corn_(maize)___healthy": {
+        "treatments": [
+            "Maintain regular scouting for pest and disease detection",
+            "Ensure proper fertilization based on soil tests",
+            "Provide adequate irrigation during critical growth stages",
+            "Control weeds to reduce competition",
+            "Monitor for insect pests regularly"
+        ],
+        "severity_notes": {
+            "mild": "Continue current management practices",
+            "moderate": "Continue current management practices",
+            "severe": "Continue current management practices"
+        }
+    },
+    "Grape___Black_rot": {
+        "treatments": [
+            "Remove and destroy mummified berries and infected canes",
+            "Apply fungicide from bud break through 4 weeks after bloom",
+            "Prune vines to improve air circulation",
+            "Remove wild grapes near vineyard",
+            "Avoid overhead irrigation"
+        ],
+        "severity_notes": {
+            "mild": "Sanitation and early fungicide application effective",
+            "moderate": "Intensive fungicide program and cultural practices needed",
+            "severe": "May lose entire crop; focus on sanitation for next season"
+        }
+    },
+    "Grape___Esca_(Black_Measles)": {
+        "treatments": [
+            "Prune out infected wood during dormant season",
+            "Protect pruning wounds with wound sealant",
+            "Remove severely infected vines",
+            "Avoid water stress through proper irrigation",
+            "No effective chemical control available - focus on prevention"
+        ],
+        "severity_notes": {
+            "mild": "Remove infected parts and monitor closely",
+            "moderate": "May need to remove entire vine if trunk is infected",
+            "severe": "Remove and destroy infected vines to prevent spread"
+        }
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "treatments": [
+            "Apply fungicide starting at bloom and continue through veraison",
+            "Remove infected leaves and destroy them",
+            "Improve canopy management for better air circulation",
+            "Avoid overhead irrigation",
+            "Remove weeds and debris from vineyard floor"
+        ],
+        "severity_notes": {
+            "mild": "Fungicide and cultural practices usually sufficient",
+            "moderate": "Multiple fungicide applications needed",
+            "severe": "Severe defoliation can affect fruit quality and vine health"
+        }
+    },
+    "Grape___healthy": {
+        "treatments": [
+            "Continue regular vineyard monitoring",
+            "Maintain proper canopy management",
+            "Ensure balanced fertilization",
+            "Provide adequate irrigation",
+            "Scout for pests and diseases weekly during growing season"
+        ],
+        "severity_notes": {
+            "mild": "Maintain current vineyard practices",
+            "moderate": "Maintain current vineyard practices",
+            "severe": "Maintain current vineyard practices"
+        }
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+        "treatments": [
+            "Remove and destroy infected trees immediately",
+            "Control Asian citrus psyllid (disease vector) with insecticides",
+            "Plant only certified disease-free nursery stock",
+            "Apply nutritional sprays to support tree health",
+            "Report to local agricultural authorities - this is a quarantine disease"
+        ],
+        "severity_notes": {
+            "mild": "Early removal critical to prevent spread",
+            "moderate": "Aggressive psyllid control and tree removal essential",
+            "severe": "No cure exists - focus on prevention and vector control"
+        }
+    },
+    "Peach___Bacterial_spot": {
+        "treatments": [
+            "Apply copper-based bactericides during dormant season",
+            "Use resistant peach varieties",
+            "Prune to improve air circulation",
+            "Avoid overhead irrigation",
+            "Remove and destroy severely infected fruit and leaves"
+        ],
+        "severity_notes": {
+            "mild": "Copper sprays and cultural practices effective",
+            "moderate": "Multiple copper applications and aggressive pruning needed",
+            "severe": "May cause significant fruit loss; consider resistant varieties"
+        }
+    },
+    "Peach___healthy": {
+        "treatments": [
+            "Monitor regularly for pests and diseases",
+            "Maintain proper pruning schedule",
+            "Ensure adequate fertilization and watering",
+            "Apply dormant oil spray to control overwintering pests",
+            "Thin fruit for better quality and disease prevention"
+        ],
+        "severity_notes": {
+            "mild": "Continue current orchard management",
+            "moderate": "Continue current orchard management",
+            "severe": "Continue current orchard management"
+        }
+    },
+    "Pepper,_bell___Bacterial_spot": {
+        "treatments": [
+            "Use disease-free certified seeds or transplants",
+            "Apply copper-based bactericides preventively",
+            "Rotate crops - avoid planting peppers in same location for 2-3 years",
+            "Remove and destroy infected plants",
+            "Avoid overhead irrigation and working in wet fields"
+        ],
+        "severity_notes": {
+            "mild": "Copper sprays and sanitation can control spread",
+            "moderate": "May need to remove infected plants and increase spray frequency",
+            "severe": "Severe infections can cause significant yield loss"
+        }
+    },
+    "Pepper,_bell___healthy": {
+        "treatments": [
+            "Continue regular monitoring for pests and diseases",
+            "Maintain consistent watering schedule",
+            "Ensure proper fertilization",
+            "Mulch to maintain soil moisture and suppress weeds",
+            "Scout for insect pests regularly"
+        ],
+        "severity_notes": {
+            "mild": "Maintain current growing practices",
+            "moderate": "Maintain current growing practices",
+            "severe": "Maintain current growing practices"
+        }
+    },
+    "Potato___Early_blight": {
+        "treatments": [
+            "Remove and destroy infected leaves immediately",
+            "Apply copper-based or chlorothalonil fungicide every 7-10 days",
+            "Avoid overhead watering - use drip irrigation at soil level",
+            "Ensure proper plant spacing for air circulation",
+            "Rotate crops - avoid planting potatoes or tomatoes in same area for 2-3 years"
+        ],
+        "severity_notes": {
+            "mild": "Early intervention with fungicide can save the crop",
+            "moderate": "Aggressive fungicide program and removal of infected foliage needed",
+            "severe": "May cause significant defoliation and tuber infection"
+        }
+    },
+    "Potato___Late_blight": {
+        "treatments": [
+            "Apply systemic fungicide immediately - this disease spreads rapidly",
+            "Destroy all infected plants and tubers",
+            "Use certified disease-free seed potatoes",
+            "Hill soil around plants to protect tubers",
+            "Harvest during dry weather and cure tubers properly before storage"
+        ],
+        "severity_notes": {
+            "mild": "Immediate fungicide application critical",
+            "moderate": "May lose significant portion of crop; aggressive treatment needed",
+            "severe": "Can destroy entire crop within days; remove all infected plants"
+        }
+    },
+    "Potato___healthy": {
+        "treatments": [
+            "Monitor fields regularly for disease symptoms",
+            "Maintain proper fertilization and irrigation",
+            "Hill plants properly to protect developing tubers",
+            "Control weeds to reduce competition and disease habitat",
+            "Scout for Colorado potato beetles and other pests"
+        ],
+        "severity_notes": {
+            "mild": "Continue current crop management",
+            "moderate": "Continue current crop management",
+            "severe": "Continue current crop management"
+        }
+    },
+    "Raspberry___healthy": {
+        "treatments": [
+            "Prune out old canes after fruiting",
+            "Maintain good air circulation through proper spacing",
+            "Ensure adequate irrigation during fruit development",
+            "Apply balanced fertilizer in early spring",
+            "Monitor for pests and diseases regularly"
+        ],
+        "severity_notes": {
+            "mild": "Maintain current care practices",
+            "moderate": "Maintain current care practices",
+            "severe": "Maintain current care practices"
+        }
+    },
+    "Soybean___healthy": {
+        "treatments": [
+            "Scout fields regularly for pests and diseases",
+            "Maintain proper plant population",
+            "Ensure adequate fertilization based on soil tests",
+            "Control weeds early in season",
+            "Monitor for soybean aphids and other insect pests"
+        ],
+        "severity_notes": {
+            "mild": "Continue current management practices",
+            "moderate": "Continue current management practices",
+            "severe": "Continue current management practices"
+        }
+    },
+    "Squash___Powdery_mildew": {
+        "treatments": [
+            "Apply sulfur-based or potassium bicarbonate fungicide at first sign",
+            "Remove and destroy heavily infected leaves",
+            "Plant resistant squash varieties",
+            "Ensure good air circulation - avoid overcrowding",
+            "Water at soil level, avoid wetting foliage"
+        ],
+        "severity_notes": {
+            "mild": "Early fungicide application very effective",
+            "moderate": "Multiple fungicide applications needed throughout season",
+            "severe": "Severe infection can reduce yield and fruit quality significantly"
+        }
+    }
+}

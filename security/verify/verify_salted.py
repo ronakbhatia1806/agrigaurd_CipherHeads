@@ -33,7 +33,7 @@ def verify_salted_image(image_input):
             salt = entry["salt"]
             stored_salted = entry["salted_value"]
 
-            candidate = phash_user + salt
+            candidate = salt + phash_user
 
             if candidate == stored_salted:
                 return {

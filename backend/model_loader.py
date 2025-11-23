@@ -1,38 +1,36 @@
 import os
 import json
-import tensorflow as tf
+import numpy as np
+from tensorflow.keras.models import load_model as keras_load_model
 
-# Get project root (assuming backend/model_loader.py is one level deep)
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# Resolve the absolute path to the project root (one level up from this file)
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-MODEL_PATH = os.path.join(ROOT, "model", "mobilenet_v2.h5")
-CLASS_INDEX_PATH = os.path.join(ROOT, "model", "class_indices.json")
-
+# Paths to model and class indices
+MODEL_PATH = os.path.join(ROOT_DIR, "model", "mobilenet_v2.h5")
+CLASS_INDICES_PATH = os.path.join(ROOT_DIR, "model", "class_indices.json")
 
 def load_model():
-    """Loads trained MobileNetV2 model from disk."""
+    """Load the trained Keras model.
+
+    Returns:
+        keras.Model: The loaded model ready for inference.
+    """
     if not os.path.exists(MODEL_PATH):
-        raise FileNotFoundError(f"Model not found at: {MODEL_PATH}")
-
-    # Fix for loading older models with 'groups' parameter in DepthwiseConv2D
-    class CustomDepthwiseConv2D(tf.keras.layers.DepthwiseConv2D):
-        def __init__(self, **kwargs):
-            kwargs.pop('groups', None)
-            super().__init__(**kwargs)
-
-    model = tf.keras.models.load_model(MODEL_PATH, custom_objects={'DepthwiseConv2D': CustomDepthwiseConv2D})
+        raise FileNotFoundError(f"Model file not found at {MODEL_PATH}")
+    model = keras_load_model(MODEL_PATH)
     return model
 
-
 def get_class_names():
-    """Loads class index → label mapping from JSON."""
-    if not os.path.exists(CLASS_INDEX_PATH):
-        raise FileNotFoundError(f"class_indices.json not found at: {CLASS_INDEX_PATH}")
+    """Load the class index mapping from the JSON file.
 
-    with open(CLASS_INDEX_PATH, "r") as f:
-        class_idx = json.load(f)
-
-    # Convert {"0": "Apple___scab", ...} → list sorted by index
-    sorted_labels = [class_idx[str(i)] for i in range(len(class_idx))]
-
-    return sorted_labels
+    Returns:
+        list: Ordered list of class names where the index corresponds to the model's output index.
+    """
+    if not os.path.exists(CLASS_INDICES_PATH):
+        raise FileNotFoundError(f"Class indices file not found at {CLASS_INDICES_PATH}")
+    with open(CLASS_INDICES_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    # Convert dict of index->name to ordered list
+    ordered = [data[str(i)] for i in range(len(data))]
+    return ordered

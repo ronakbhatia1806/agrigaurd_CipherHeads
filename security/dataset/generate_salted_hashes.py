@@ -31,7 +31,7 @@ def generate_all_salted_hashes():
         salt = generate_salt()
 
         # salted "hash" is just concatenation, no extra hash
-        salted_value = phash + salt
+        salted_value = salt + phash
 
         output.append({
             "filename": filename,
