@@ -114,13 +114,14 @@ npm run dev
 * If TensorFlow errors appear on import, check numpy, scipy, protobuf versions and match TensorFlow supported versions
 * If frontend shows failed fetch, ensure API calls point to `http://localhost:8000/predict` and CORS is enabled in backend
 
-## 📁 Resources
 
-* Hackathon guidance PDF: `/mnt/data/Hackathon AI_ML Project Guidance.pdf`
+## 📞 Team Details and roles
 
-## 📞 Contact
+Ronak Bhatia 
+Param Lodaya
+Arsh Kazi 
+Hriday Patel 
 
-For implementation questions, reach the dev team in the project channel or open an issue in the repo.
 
 ---
 
