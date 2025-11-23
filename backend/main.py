@@ -34,6 +34,19 @@ MODEL = load_model()
 CLASS_NAMES = get_class_names()
 IMG_SIZE = (224, 224)
 
+@app.get("/")
+async def root():
+    """Root endpoint with API information"""
+    return {
+        "message": "Agriguard API is running",
+        "version": "1.0.0",
+        "endpoints": {
+            "/predict": "POST - Upload an image for disease prediction",
+            "/": "GET - API information (this endpoint)"
+        },
+        "status": "healthy"
+    }
+
 def preprocess_image_bytes(image_bytes: bytes) -> np.ndarray:
     img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
     img = img.resize(IMG_SIZE)
@@ -42,10 +55,17 @@ def preprocess_image_bytes(image_bytes: bytes) -> np.ndarray:
     return arr
 
 
+@app.options("/predict")
+async def predict_options():
+    """Handle CORS preflight requests"""
+    return {"message": "OK"}
+
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     try:
+        print(f"[INFO] ========== NEW PREDICTION REQUEST ==========")
         print(f"[INFO] Received file: {file.filename}")
+        print(f"[INFO] Content type: {file.content_type}")
         
         try:
             image_bytes = await file.read()
